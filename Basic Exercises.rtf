@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fnil\fcharset0 DejaVuSansMono;}
+{\colortbl;\red255\green255\blue255;\red242\green242\blue242;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\f0\fs22 \cf0 \CocoaLigature0 \
+Synchronized my git account and edited the README.md file. \
+\
+\cf2 \cb0 /Users/cmdb $ cp -r /Users/cmdb/data/dmel_r5.57_FB2014_03/gff /Users/cmdb/data/day1\
+\cf0 \cb1 This copied the gff folder into day1. I had to use the "-r" command because the file is a directory.\
+\
+\cf2 \cb0 /Users/cmdb/data/day1 $ gunzip -r gff\cf0 \cb1  This should unzip the whole directory gff.\
+\
+\cf2 \cb0 /Users/cmdb/data/day1/gff $ head -n13564834 dmel-all-r5.57.gff > dmel-all-r5.57-removeFASTA.gff\cf0 \cb1  This "removes the .FASTA formatted sequences at the end of the gff file". Not sure what that means. Looks like it took the first 13 million lines of code and got rid of the .FASTA sequences?\
+\
+\cf2 \cb0 /Users/cmdb/data/day1/gff $ wc dmel-all-r5.57-removeFASTA.gff \
+ 13564834 153048099 2662919684 dmel-all-r5.57-removeFASTA.gff\cf0 \cb1  This indicates that there are 13564834 lines in this file, which has no .FASTA formatted sequences at the end. \
+\
+\cf2 \cb0 /Users/cmdb/data/day1/gff $ grep -c "Sxl" dmel-all-r5.57-removeFASTA.gff \
+696\cf0 \cb1  This counted the number of times the phrase "Sxl" appeared in my file. It got 696.\
+\
+\cf2 \cb0 /Users/cmdb/data/day1/gff $ cut -f3 dmel-all-r5.57-removeFASTA.gff | sort -d | uniq -c\
+  15 ###\
+ 973 BAC_cloned_genomic_insert\
+108709 CDS\
+   1 DNA_motif\
+127571 RNAi_reagent\
+185819 TF_binding_site\
+12454 TSS\
+6653 breakpoint\
+   1 chromosome\
+  14 chromosome_arm\
+5771 chromosome_band\
+  79 complex_substitution\
+ 818 deletion\
+ 103 enhancer\
+83955 exon\
+71382 exon_junction\
+   1 ##feature-ontology ftp://ftp.flybase.org/releases/FB2014_03/precomputed_files/ontologies/so.obo.zip\
+36888 five_prime_UTR\
+17294 gene\
+   1 ##genome-build FlyBase r5.57\
+   1 ##gff-version 3\
+  48 insertion_site\
+7683 insulator\
+71024 intron\
+30306 mRNA\
+3658716 match\
+8067026 match_part\
+   7 mature_peptide\
+ 304 miRNA\
+2005 modified_RNA_base_feature\
+2462 ncRNA\
+254584 oligonucleotide\
+8069 origin_of_replication\
+18819 orthologous_region\
+613059 orthologous_to\
+14095 pcr_product\
+4917 point_mutation\
+  98 polyA_site\
+ 238 pre_miRNA\
+30305 protein\
+1401 protein_binding_site\
+ 239 pseudogene\
+ 161 rRNA\
+7153 region\
+2064 regulatory_region\
+9409 repeat_region\
+ 688 rescue_fragment\
+   1 ##sequence-region 2L 1 23011546\
+   1 ##sequence-region 2LHet 1 368874\
+   1 ##sequence-region 2R 1 21146710\
+   1 ##sequence-region 2RHet 1 3288763\
+   1 ##sequence-region 3L 1 24543559\
+   1 ##sequence-region 3LHet 1 2555493\
+   1 ##sequence-region 3R 1 27905055\
+   1 ##sequence-region 3RHet 1 2517509\
+   1 ##sequence-region 4 1 1351859\
+   1 ##sequence-region U 1 10049039\
+   1 ##sequence-region Uextra 1 29004657\
+   1 ##sequence-region X 1 22422829\
+   1 ##sequence-region XHet 1 204114\
+   1 ##sequence-region YHet 1 347040\
+   1 ##sequence-region dmel_mitochondrion_genome 1 19519\
+ 216 sequence_variant\
+ 537 silencer\
+  31 snRNA\
+ 288 snoRNA\
+   1 ##species http://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=7227\
+ 978 syntenic_region\
+ 314 tRNA\
+ 580 tandem_repeat\
+27408 three_prime_UTR\
+5603 transposable_element\
+65458 transposable_element_insertion_site\
+  22 uncharacterized_change_in_nucleotide_sequence}
