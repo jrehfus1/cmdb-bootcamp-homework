@@ -1,0 +1,9 @@
+
+[2014-09-02 22:50:12] Beginning TopHat run (v2.0.12)
+-----------------------------------------------
+[2014-09-02 22:50:12] Checking for Bowtie
+		  Bowtie version:	 2.2.3.0
+[2014-09-02 22:50:12] Checking for Samtools
+		Samtools version:	 0.1.19.0
+[2014-09-02 22:50:12] Checking for Bowtie index files (genome)..
+Error: Could not find Bowtie 2 index files (/Users/cmdb/data/genomes/dmel-all-chromosomes-r5.57.*.bt2)

@@ -1,0 +1,1 @@
+/usr/local/bin/tophat -p4 -G/Users/cmdb/data/day1/gff/dmel-all-r5.57-removeFASTA.gff -oSRR072893_output --no-novel-juncs --segment-length 20 /Users/cmdb/data/genomes/dmel-all-chromosomes-r5.57 /Users/cmdb/data/fastq/SRR0772893.fastq
